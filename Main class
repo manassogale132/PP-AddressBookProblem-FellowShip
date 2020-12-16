@@ -1,0 +1,45 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class AddressBook {
+
+	public static void main(String[] args) {
+	
+		PersonOperations obj1=new PersonOperations();
+		
+		
+		Scanner scan=new Scanner(System.in);
+		
+		System.out.println("--AddressBook Problem--");
+		System.out.println("------------------------------------");
+		System.out.println("1. Add User in Addressbook .");
+		System.out.println(" ");
+		System.out.println("2. View Users in Addressbook .");
+		System.out.println(" ");
+		System.out.println("3. Sort By First-Name in Addressbook .");
+		System.out.println(" ");
+		System.out.println("------------------------------------");
+		
+		int choice = 0;
+		do {
+		int choice1=scan.nextInt();
+		switch(choice1) {
+		
+		case 1:
+			obj1.personAdd();
+			break;
+		case 2:
+			obj1.personView();
+			break;
+		case 3:
+			obj1.personSortbyName();
+			break;
+		default:
+			System.out.println("No such case .");
+		
+		}
+		}while(choice!=4);
+	
+	}
+}
+
