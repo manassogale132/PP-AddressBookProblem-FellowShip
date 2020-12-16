@@ -26,15 +26,20 @@ public class AddressBook {
 		switch(choice1) {
 		
 		case 1:
-			obj1.personAdd();
+		
+			obj1.personAdd();                                             //calling first method to add user(s) in arraylist of obj
 			break;
 		case 2:
-			obj1.personView();
+		
+			obj1.personView();                                            //calling second method to view users from arraylist of obj
 			break;
+			
 		case 3:
-			obj1.personSortbyName();
+			obj1.personSortbyName();                                      //calling third method to sort by first name from arraylist of obj                 
 			break;
+			
 		default:
+		
 			System.out.println("No such case .");
 		
 		}
