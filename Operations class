@@ -9,7 +9,7 @@ public class PersonOperations {
 	ArrayList<Person> personList=new ArrayList();
 	
 	
-public void personAdd() {
+public void personAdd() {                                                                   //First Method 
 	
 	Scanner scan=new Scanner(System.in);
 	
@@ -44,7 +44,7 @@ public void personAdd() {
 }
 	
 
-public void personView() {
+public void personView() {                                                               //Second Method 
 	   	   
 	System.out.println("-- Stored information --");
 	System.out.println(" ");
@@ -57,7 +57,7 @@ public void personView() {
 }
 
 
-public void personSortbyName() {
+public void personSortbyName() {                                                                    //Third Method
 	
 	Collections.sort(personList, new Comparator<Person>(){
 			
